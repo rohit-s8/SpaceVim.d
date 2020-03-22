@@ -46,9 +46,6 @@ default_height = 30
 name = 'denite'
 
 [[layers]]
-name = 'VersionControl'
-
-[[layers]]
 name = 'checkers'
 
 [[layers]]
@@ -69,8 +66,18 @@ enable_typeinfo = true
 name = 'lang#markdown'
 
 [[layers]]
+name = 'lang#scheme'
+scheme_dialect = 'mit-scheme'
+scheme_interpreter = '/usr/local/bin/scheme'
+
+[[layers]]
 name= 'core'
 file_tree_show_hidden = true
 
 [[layers]]
 name = "colorscheme"
+
+[[custom_plugins]]
+name = "wsdjeg/vim-todo"
+on_cmd = ["OpenTodo"]
+merged = false

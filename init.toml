@@ -11,7 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "SpaceVim"
+    colorscheme = "molokai"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -30,6 +30,7 @@
     lint_on_the_fly = false
     disabled_plugins = ['vim-import-js']
     bootstrap_after = "myspacevim#after"
+    vimcompatible = true
 
 # Enable autocomplete layer
 [[layers]]
@@ -53,6 +54,9 @@ name = 'git'
 git-plugin = 'fugitive'
 
 [[layers]]
+name = 'VersionControl'
+
+[[layers]]
 name = 'lang#javascript'
 
 [[layers]]
@@ -61,6 +65,7 @@ name = 'lang#java'
 [[layers]]
 name = 'lang#python'
 enable_typeinfo = true
+python_file_head = []
 
 [[layers]]
 name = 'lang#markdown'
@@ -75,9 +80,16 @@ name= 'core'
 file_tree_show_hidden = true
 
 [[layers]]
-name = "colorscheme"
+name = 'colorscheme'
+
+[[layers]]
+name = 'debug'
 
 [[custom_plugins]]
-name = "wsdjeg/vim-todo"
+name = 'wsdjeg/vim-todo'
 on_cmd = ["OpenTodo"]
+merged = false
+
+[[custom_plugins]]
+name = 'ryanoasis/vim-devicons'
 merged = false

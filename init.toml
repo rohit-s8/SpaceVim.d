@@ -11,32 +11,32 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "molokai"
-    colorscheme_bg = "dark"
+    colorscheme = 'molokai'
+    colorscheme_bg = 'dark'
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    filemanager = "nerdtree"
-    statusline_separator = "arrow"
-    statusline_inactive_separator = "arrow"
+    filemanager = 'nerdtree'
+    statusline_separator = 'arrow'
+    statusline_inactive_separator = 'arrow'
     buffer_index_type = 2
     enable_tabline_filetype_icon = true
     enable_statusline_mode = true
-    autocomplete_method = "coc"
+    autocomplete_method = 'coc'
     enable_neomake = false
     enable_ale = true
     lint_on_the_fly = false
     disabled_plugins = ['vim-import-js']
-    bootstrap_after = "myspacevim#after"
+    bootstrap_after = 'myspacevim#after'
     vimcompatible = true
 
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "cycle"
+auto_completion_return_key_behavior = 'complete'
+auto_completion_tab_key_behavior = 'cycle'
 
 [[layers]]
 name = 'shell'
@@ -57,23 +57,7 @@ git-plugin = 'fugitive'
 name = 'VersionControl'
 
 [[layers]]
-name = 'lang#javascript'
-
-[[layers]]
-name = 'lang#java'
-
-[[layers]]
-name = 'lang#python'
-enable_typeinfo = true
-python_file_head = []
-
-[[layers]]
 name = 'lang#markdown'
-
-[[layers]]
-name = 'lang#scheme'
-scheme_dialect = 'mit-scheme'
-scheme_interpreter = '/usr/local/bin/scheme'
 
 [[layers]]
 name= 'core'
@@ -82,12 +66,9 @@ file_tree_show_hidden = true
 [[layers]]
 name = 'colorscheme'
 
-[[layers]]
-name = 'debug'
-
 [[custom_plugins]]
 name = 'wsdjeg/vim-todo'
-on_cmd = ["OpenTodo"]
+on_cmd = ['OpenTodo']
 merged = false
 
 [[custom_plugins]]

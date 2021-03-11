@@ -19,7 +19,7 @@ highlight ALEErrorSign guifg=#ff0000 guibg=#242526
 
 augroup java_ft
   autocmd!
-  autocmd Filetype java ALEDisable
+  autocmd Filetype java ALEDisableBuffer
   autocmd Filetype java nnoremap <buffer><silent> <space>lga :call CocAction('codeAction', 0, 'Generate Getters and Setters...')<CR>
   autocmd Filetype java nnoremap <buffer><silent> <space>lgs :call CocAction('codeAction', 0, 'Generate toString()...')<CR>
   autocmd Filetype java nnoremap <buffer><silent> <space>lgc :call CocAction('codeAction', 0, 'Generate Constructors...')<CR>

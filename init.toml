@@ -1,75 +1,64 @@
-#=============================================================================
-# dark_powered.toml --- dark powered configuration example for SpaceVim
-# Copyright (c) 2016-2017 Wang Shidong & Contributors
-# Author: Wang Shidong < wsdjeg at 163.com >
-# URL: https://spacevim.org
-# License: GPLv3
-#=============================================================================
-
-# All SpaceVim option below [option] section
 [options]
-    # set spacevim theme. by default colorscheme layer is not loaded,
-    # if you want to use more colorscheme, please load the colorscheme
-    # layer
-    colorscheme = 'molokai'
-    colorscheme_bg = 'dark'
-    # Disable guicolors in basic mode, many terminal do not support 24bit
-    # true colors
-    enable_guicolors = true
-    # Disable statusline separator, if you want to use other value, please
-    # install nerd fonts
-    filemanager = 'nerdtree'
-    statusline_separator = 'arrow'
-    statusline_inactive_separator = 'arrow'
-    buffer_index_type = 2
-    enable_tabline_filetype_icon = true
-    enable_statusline_mode = true
-    autocomplete_method = 'coc'
-    lint_engine = 'ale'
-    lint_on_the_fly = false
-    disabled_plugins = ['vim-import-js']
-    bootstrap_after = 'myspacevim#after'
-    vimcompatible = true
-
-# Enable autocomplete layer
-[[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = 'complete'
-auto_completion_tab_key_behavior = 'cycle'
+  default_indet = 2
+  expand_tab = true
+  colorscheme = 'srcery'
+  colorscheme_bg = 'dark'
+  enable_guicolors = true
+  filemanager = 'nerdtree'
+  statusline_separator = 'arrow'
+  statusline_inactive_separator = 'arrow'
+  buffer_index_type = 2
+  enable_tabline_filetype_icon = true
+  enable_statusline_mode = true
+  autocomplete_method = 'coc'
+  lint_engine = 'ale'
+  lint_on_the_fly = false
+  disabled_plugins = ['vim-import-js']
+  bootstrap_before = 'myspacevim#before'
+  bootstrap_after = 'myspacevim#after'
+  vimcompatible = true
 
 [[layers]]
-name = 'shell'
-default_position = 'bottom'
-default_height = 30
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = 'smart'
+  auto_completion_tab_key_behavior = 'smart'
 
 [[layers]]
-name = 'denite'
+  name = 'shell'
+  default_position = 'bottom'
+  default_height = 30
 
 [[layers]]
-name = 'checkers'
+  name = 'denite'
 
 [[layers]]
-name = 'git'
-git-plugin = 'fugitive'
+  name = 'checkers'
 
 [[layers]]
-name = 'VersionControl'
+  name = 'VersionControl'
 
 [[layers]]
-name = 'lang#markdown'
+  name = 'git'
+  git-plugin = 'fugitive'
 
 [[layers]]
-name= 'core'
-file_tree_show_hidden = true
+  name= 'core'
+  file_tree_show_hidden = true
 
 [[layers]]
-name = 'colorscheme'
+  name = 'colorscheme'
+
+[[layers]]
+  name = 'lang#markdown'
+
+[[layers]]
+  name = 'lang#dockerfiles.lang/dockerfile/'
 
 [[custom_plugins]]
-name = 'wsdjeg/vim-todo'
-on_cmd = ['OpenTodo']
-merged = false
+  name = 'wsdjeg/vim-todo'
+  on_cmd = ['OpenTodo']
+  merged = false
 
 [[custom_plugins]]
-name = 'ryanoasis/vim-devicons'
-merged = false
+  name = 'ryanoasis/vim-devicons'
+  merged = false

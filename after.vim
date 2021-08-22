@@ -38,3 +38,12 @@ augroup java_ft
   autocmd FileType java call SpaceVim#custom#LangSPC('java', 'nnoremap', ['g', 'c'], 'call CocAction("codeAction", 0, "Generate Constructors...")', 'Constructors', 1)
   autocmd FileType java call SpaceVim#custom#LangSPC('java', 'nnoremap', ['g', 'i'], 'call CocAction("codeAction", 0, "Override/Implement Methods...")', 'Override/Implement Methods', 1)
 augroup END
+
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"java", "javascript", "lua"}, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = true, -- false will disable the whole extension
+  },
+}
+EOF

@@ -1,7 +1,7 @@
 [options]
   default_indet = 2
   expand_tab = true
-  colorscheme = 'srcery'
+  colorscheme = 'hybrid'
   colorscheme_bg = 'dark'
   enable_guicolors = true
   filemanager = 'nerdtree'
@@ -21,7 +21,7 @@
 [[layers]]
   name = 'autocomplete'
   auto_completion_return_key_behavior = 'smart'
-  auto_completion_tab_key_behavior = 'smart'
+  auto_completion_tab_key_behavior = 'cycle'
 
 [[layers]]
   name = 'shell'
@@ -62,3 +62,8 @@
 [[custom_plugins]]
   name = 'ryanoasis/vim-devicons'
   merged = false
+
+[[custom_plugins]]
+  name = 'nvim-treesitter/nvim-treesitter'
+  merged = false
+  hook_post_update = 'TSUpdate'

@@ -1,10 +1,11 @@
 [options]
   default_indet = 2
   expand_tab = true
-  colorscheme = 'hybrid'
+  colorscheme = 'one'
   colorscheme_bg = 'dark'
   enable_guicolors = true
   filemanager = 'nerdtree'
+  filetree_direction = 'left'
   statusline_separator = 'arrow'
   statusline_inactive_separator = 'arrow'
   buffer_index_type = 2
@@ -67,3 +68,7 @@
   name = 'nvim-treesitter/nvim-treesitter'
   merged = false
   hook_post_update = 'TSUpdate'
+
+[[custom_plugins]]
+  name = 'hashivim/vim-terraform'
+  merged = false

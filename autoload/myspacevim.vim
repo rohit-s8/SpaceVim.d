@@ -1,7 +1,7 @@
 function! myspacevim#before() abort
-  source ~/.Spacevim.d/before.vim
+  source ~/.SpaceVim.d/before.vim
 endfunction
 
 function! myspacevim#after() abort
-	source ~/.Spacevim.d/after.vim
+	source ~/.SpaceVim.d/after.vim
 endfunction

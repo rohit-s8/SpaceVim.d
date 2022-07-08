@@ -1,5 +1,5 @@
 [options]
-  default_indet = 2
+  default_indent = 2
   expand_tab = true
   colorscheme = 'one'
   colorscheme_bg = 'dark'

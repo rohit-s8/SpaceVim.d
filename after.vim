@@ -47,7 +47,8 @@ require'nvim-treesitter.configs'.setup {
     "c",
     "javascript",
     "lua",
-    "go"
+    "go",
+    "kotlin"
   }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
 
   highlight = {

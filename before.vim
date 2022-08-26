@@ -15,7 +15,7 @@ let g:delimitMate_expand_space = 1
 nnoremap <silent> Q :call SpaceVim#mapping#SmartClose()<CR>
 
 " coc refactor bindings
-let s:coc_filetypes=['java', 'python', 'go']
+let s:coc_filetypes=['java', 'kotlin', 'python', 'go']
 for ft in s:coc_filetypes
   call SpaceVim#custom#LangSPCGroupName(ft, ['r'], '+Code Refactor')
   call SpaceVim#custom#LangSPC(ft, 'nmap', ['r', 'n'], '<plug>(coc-rename)', 'Rename Symbol', 0)

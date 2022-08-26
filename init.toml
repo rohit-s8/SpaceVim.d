@@ -72,3 +72,7 @@
 [[custom_plugins]]
   name = 'hashivim/vim-terraform'
   merged = false
+
+[[custom_plugins]]
+  name = 'liuchengxu/graphviz.vim'
+  merged = false
